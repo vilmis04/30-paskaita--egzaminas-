@@ -26,6 +26,7 @@ document.querySelector("#btn").addEventListener("click", () => {
 
                 avatar.src = user.avatar_url;
                 avatar.style.width = "100px";
+                avatar.style.marginRight = "0.5rem";
                 login.textContent = `Login: ${user.login}`;
                 url.textContent = `Avatar URL: ${user.avatar_url}`
 
@@ -33,7 +34,7 @@ document.querySelector("#btn").addEventListener("click", () => {
                 card.style.justifyContent = "space-between";
                 card.style.alignItems = "center";
                 card.style.padding = "1rem";
-                card.style.width = "60%";
+                card.style.width = "40%";
                 card.style.margin = "0 auto";
                 
                 textContainer.append(login, url);
@@ -42,4 +43,4 @@ document.querySelector("#btn").addEventListener("click", () => {
             });
      })
         .catch(err => console.log(err));
-});
+}, { once: true });
