@@ -19,6 +19,7 @@ document.querySelector("form").addEventListener("submit", (event)=> {
     }
 
     const output = document.querySelector("#output");
+    while (output.firstChild) output.firstChild.remove();
     Object.entries(converted).forEach(item => {
         const element = document.createElement("div");
         element.style.textAlign = "center";
