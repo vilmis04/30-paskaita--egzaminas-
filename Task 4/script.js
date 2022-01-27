@@ -42,8 +42,6 @@ function createCard () {
     card.style.display = "flex";
     card.style.justifyContent = "space-between";
     card.style.alignItems = "center";
-    // card.style.padding = "1rem";
-    // card.style.width = "80%";
     card.style.margin = "3rem auto";
 
     return card;
@@ -55,8 +53,6 @@ function createContainer() {
     elem.style.flexDirection = "column";
     elem.style.justifyContent = "center";
     elem.style.alignItems = "center";
-    // elem.style.padding = "1rem";
-    // elem.style.width = "fit-content";
     elem.style.margin = "0 3rem";
     return elem;
 }
