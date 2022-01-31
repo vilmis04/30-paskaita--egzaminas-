@@ -21,15 +21,20 @@ fetch(ENDPOINT)
                 const modelContainer = createContainer();
 
                 brandContainer.textContent = carMaker.brand;
+                brandContainer.style.width = "20rem";
                 brandContainer.style.fontSize = "2rem";
                 brandContainer.style.fontWeight = "bold";
 
                 carMaker.models.forEach(model => {
                     const container = document.createElement("div");
+                    modelContainer.style.width = "20rem";
                     container.textContent = model;
                     modelContainer.append(container);
                 });
 
+                card.style.border = "1px solid black";
+                card.style.borderRadius = "10px";
+                card.style.padding = "1rem";
                 card.append(brandContainer, modelContainer);
 
                 document.querySelector("#output").append(card);
